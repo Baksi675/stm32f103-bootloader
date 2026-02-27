@@ -1,0 +1,35 @@
+mainmenu "Bootloader Configuration"
+
+menu "bl"
+
+	config BL_RX_BUF_SIZE
+		int "RX buffer size"
+		range 1 256
+		default 128
+		help
+			Size of the buffer that contains the data packet received from host.
+			
+			Increase this value if larger packets are expected.
+
+endmenu
+
+menu "log"
+
+	config LOG_FORMAT_BUF_SIZE
+		int "Format buffer size"
+		range 1 256
+		default 64
+		help
+			Size of the buffer that contains the log message format.
+			
+			Increase this value if long messages are to be printed.
+
+endmenu
+
+config COMPILE_WITH_LOGGING
+	bool "Compile with logging"
+	default y
+
+config BL_VERSION
+	string "Bootloader version"
+	default "0.1"
