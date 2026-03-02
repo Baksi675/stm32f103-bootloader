@@ -1,0 +1,10 @@
+Drivers/
+Debug/
+.config
+.config.old
+.cproject
+.mxproject
+.project
+.settings/
+bootloader.ioc
+bootloader.launch
