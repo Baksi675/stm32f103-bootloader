@@ -31,19 +31,21 @@ A custom bootloader implementation for STM32F103 microcontrollers.
 
 ## 🧩 Available Commands
 
-| Command      | Description |
+| Command          | Description |
 |--------------|------------|
-| `get-ver`    | Get bootloader version |
-| `get-cmds`   | Get available command list |
-| `get-cid`    | Get MCU chip ID |
-| `get-rdp`    | Get MCU flash RDP status |
-| `set-rdp`    | Set MCU flash RDP status |
-| `erase`      | Erase the flash |
-| `write`      | Write to the flash |
-| `read`       | Read from the flash |
-| `program`    | Erase then writes to the flash |
-| `jump`       | Jump to the specified address |
-| `rst`        | Reset the MCU |
+| `CMD_GET_VER`    | Get bootloader version |
+| `CMD_GET_CMDS`   | Get available command list |
+| `CMD_GET_CID`    | Get MCU chip ID |
+| `CMD_GET_RDP`    | Get MCU flash RDP status |
+| `CMD_SET_RDP`    | Set MCU flash RDP status |
+| `CMD_GET_WRP`    | Get MCU flash WRP status |
+| `CMD_SET_WRP`    | Set MCU flash WRP status |
+| `CMD_ERASE`      | Erase the flash |
+| `CMD_WRITE`      | Write to the flash |
+| `CMD_READ`       | Read from the flash |
+| `CMD_PROGRAM`    | Erase then write to the flash |   
+| `CMD_JUMP`       | Jump to the specified address |
+| `CMD_RST`        | Reset the MCU |
 
 ---
 
